@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParOuImpar</title>
+    <div id="resultado"></div>
+    <script>
+        let numero1 = Number(prompt('Digite o valor'));
+        let resto = "";
+        let retorno = "";
+
+        resto = numero1 % 2;
+
+        {
+            if(resto==0)
+            retorno= ("O número " + numero1 + " é um número par");
+            
+            else if(resto != 0)
+            retorno= ("O número " + numero1 + " é um número ímpar");
+        }
+        document.getElementById('resultado').innerHTML = retorno;
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

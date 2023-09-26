@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumeroMaiorOuMenor</title>
+    <div id="resultado"></div>
+        <script>
+            let numero1 = Number(prompt('Digite o primeiro valor:'));
+            let numero2 = Number(prompt('Digite o segundo valor:'));
+            let retorno = "";
+
+            {
+                if(numero1 < numero2)
+                    retorno = ("O valor " + numero1 + " é menor que " + numero2);
+                
+                    
+                else if(numero1>numero2)
+                    retorno = ("O valor " + numero1 + " é maior que " + numero2);
+                
+            }
+            document.getElementById('resultado').innerHTML = retorno;
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

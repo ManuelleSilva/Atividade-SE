@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganhou</title>
+    <div id="resultado"></div>
+    <script>
+        let nomefuncionario = prompt('Digite o nome do funcionário')
+        let meta = Number(prompt('Digite a meta de valor de vendas do funcionário no mês'));
+        let venda = Number(prompt('Digite o valor de vendas do funcionário no mês'));
+        let retorno ="";
+
+        {
+            if(meta>venda)
+            retorno= ("Você não ganhou");
+
+            else if(meta<=venda)
+            retorno= ("Você ganhou!!");
+
+        }
+        document.getElementById('resultado').innerHTML= "Funcionário:" + nomefuncionario + " " + retorno;
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

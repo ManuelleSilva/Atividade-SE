@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IdadeENome</title>
+    <div id="resultado"></div>
+    <script>
+        let nome1 = prompt('Qual é o nome da primeira pessoa?');
+        let AnoNascimento1 = Number(prompt('Em que ano nasceu?'));
+        let nome2 = prompt('Qual é o nome da segunda pessoa?');
+        let AnoNascimento2 = Number(prompt('Em que ano nasceu?'));
+        let AnoAtual = prompt('Em que ano estamos?');
+        let Idade1 = "";
+        let Idade2 = "";
+        let retorno = "";
+
+        Idade1 = AnoAtual - AnoNascimento1;
+        Idade2 = AnoAtual - AnoNascimento2;
+
+        {
+            if(Idade1<Idade2)
+            retorno = ("A pessoa mais nova é " + nome1);
+                
+            else if(Idade1>Idade2)
+            retorno = ("A pessoa mais nova é " + nome2);
+ 
+        }
+        document.getElementById('resultado').innerHTML = nome1 + " nasceu no ano de " + AnoNascimento1 + "<br> Tem" + Idade1 + " anos" + "<br>" + nome2 + " nasceu no ano de " + AnoNascimento2 + "<br> Tem" + Idade2 + " anos"  + "<br>" + retorno;
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
